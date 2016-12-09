@@ -150,5 +150,10 @@ namespace QuanLyBanHang.View
             else
                 return;
         }
+
+        private void txtSDT_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

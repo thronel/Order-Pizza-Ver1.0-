@@ -280,6 +280,7 @@
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(218, 20);
             this.txtSDT.TabIndex = 4;
+            this.txtSDT.TextChanged += new System.EventHandler(this.txtSDT_TextChanged);
             // 
             // NhanVienForm
             // 
