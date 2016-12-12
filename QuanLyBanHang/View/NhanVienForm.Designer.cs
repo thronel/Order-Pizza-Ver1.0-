@@ -224,6 +224,7 @@
             // 
             this.txtMa.Location = new System.Drawing.Point(118, 41);
             this.txtMa.Name = "txtMa";
+            this.txtMa.ReadOnly = true;
             this.txtMa.Size = new System.Drawing.Size(310, 26);
             this.txtMa.TabIndex = 1;
             // 
@@ -282,6 +283,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.groupBox1);
+            this.MinimumSize = new System.Drawing.Size(1150, 578);
             this.Name = "NhanVienForm";
             this.Text = "NhanVienForm";
             this.Load += new System.EventHandler(this.NhanVienForm_Load);

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyBanHang.Control;
 using QuanLyBanHang.Object;
+using QuanLyBanHang.Model;
 
 namespace QuanLyBanHang.View
 {
@@ -19,6 +20,7 @@ namespace QuanLyBanHang.View
             InitializeComponent();
         }
         NhanVienCtrl nvCtr = new NhanVienCtrl();
+        NhanVienMod nvMod = new NhanVienMod();
         private int flagLuu = 0;
 
         private void NhanVienForm_Load(object sender, EventArgs e)
