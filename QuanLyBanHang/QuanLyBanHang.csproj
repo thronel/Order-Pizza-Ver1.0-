@@ -35,6 +35,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\mysql-connector-net-7.0.6-noinstall\v4.5.1\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -51,15 +55,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control\ChiTietHoaDonCtrl.cs" />
+    <Compile Include="Control\HangHoaCtrl.cs" />
+    <Compile Include="Control\HoaDonCtrl.cs" />
+    <Compile Include="Control\KhachHangCtrl.cs" />
     <Compile Include="Control\NhanVienCtrl.cs" />
+    <Compile Include="Model\ChiTietHoaDonMod.cs" />
     <Compile Include="Model\ConnectDatabase.cs" />
+    <Compile Include="Model\HangHoaMod.cs" />
+    <Compile Include="Model\HoaDonMod.cs" />
+    <Compile Include="Model\KhachHangMod.cs" />
     <Compile Include="Model\NhanVienMod.cs" />
+    <Compile Include="Object\ChiTietHoaDonObj.cs" />
+    <Compile Include="Object\HangHoaObj.cs" />
+    <Compile Include="Object\HoaDonObj.cs" />
+    <Compile Include="Object\KhachHangObj.cs" />
     <Compile Include="Object\NhanVienObj.cs" />
     <Compile Include="View\HangHoaForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\HangHoaForm.Designer.cs">
       <DependentUpon>HangHoaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\HoaDonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\HoaDonForm.Designer.cs">
+      <DependentUpon>HoaDonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\KhachHangForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\KhachHangForm.Designer.cs">
+      <DependentUpon>KhachHangForm.cs</DependentUpon>
     </Compile>
     <Compile Include="View\MainForm.cs">
       <SubType>Form</SubType>
@@ -75,6 +103,15 @@
     <Compile Include="View\NhanVienForm.Designer.cs">
       <DependentUpon>NhanVienForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\HangHoaForm.resx">
+      <DependentUpon>HangHoaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\HoaDonForm.resx">
+      <DependentUpon>HoaDonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\KhachHangForm.resx">
+      <DependentUpon>KhachHangForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

@@ -5,13 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace QuanLyBanHang.Model
 {
     class ConnectDatabase
     {
         #region Availible
+        //private MySqlConnection Conn;
         private SqlConnection Conn;
+        //private MySqlCommand _cmd;
         private SqlCommand _cmd;
         private string _error;
 
@@ -22,11 +25,13 @@ namespace QuanLyBanHang.Model
         }
 
         public SqlConnection Connection
+        //public MySqlConnection Connection
         {
             get { return Conn; }
         }
 
         public SqlCommand CMD
+        //public MySqlCommand CMD
         {
             get { return _cmd; }
             set { _cmd = value; }
@@ -37,6 +42,7 @@ namespace QuanLyBanHang.Model
         public ConnectDatabase()
         {
             StrCon = @"Data Source=VU;Initial Catalog=QLBH;Integrated Security=True";
+            //Conn = new MySqlConnection(StrCon);
             Conn = new SqlConnection(StrCon);
         }
         #endregion

@@ -48,7 +48,7 @@ namespace QuanLyBanHang.View
         private void binhding()
         {
             txtMa.DataBindings.Clear();
-            txtMa.DataBindings.Add("Text", dtgvDS.DataSource, "MaNV");
+            txtMa.DataBindings.Add("Text", dtgvDS.DataSource, "MaNhanVien");
             txtTen.DataBindings.Clear();
             txtTen.DataBindings.Add("Text", dtgvDS.DataSource, "TenNhanVien");
             cmbGioiTinh.DataBindings.Clear();
@@ -101,6 +101,13 @@ namespace QuanLyBanHang.View
             DisEnl(true);
         }
 
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            flagLuu = 1;
+            DisEnl(true);
+            loadCMB();
+        }
+
         private void btnXoa_Click(object sender, EventArgs e)
         {
             DialogResult dr = MessageBox.Show("Bạn chắc chắn muốn xóa nhân viên này?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -112,13 +119,6 @@ namespace QuanLyBanHang.View
                     MessageBox.Show("Xóa không thành công!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             NhanVienForm_Load(sender, e);
-        }
-
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-            flagLuu = 1;
-            DisEnl(true);
-            loadCMB();
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -149,11 +149,6 @@ namespace QuanLyBanHang.View
                 NhanVienForm_Load(sender, e);
             else
                 return;
-        }
-
-        private void txtSDT_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
