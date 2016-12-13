@@ -55,22 +55,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control\ChamCongCtrl.cs" />
     <Compile Include="Control\ChiTietHoaDonCtrl.cs" />
     <Compile Include="Control\HangHoaCtrl.cs" />
     <Compile Include="Control\HoaDonCtrl.cs" />
     <Compile Include="Control\KhachHangCtrl.cs" />
     <Compile Include="Control\NhanVienCtrl.cs" />
+    <Compile Include="Model\ChamCongMod.cs" />
     <Compile Include="Model\ChiTietHoaDonMod.cs" />
     <Compile Include="Model\ConnectDatabase.cs" />
     <Compile Include="Model\HangHoaMod.cs" />
     <Compile Include="Model\HoaDonMod.cs" />
     <Compile Include="Model\KhachHangMod.cs" />
     <Compile Include="Model\NhanVienMod.cs" />
+    <Compile Include="Object\ChamCongObj.cs" />
     <Compile Include="Object\ChiTietHoaDonObj.cs" />
     <Compile Include="Object\HangHoaObj.cs" />
     <Compile Include="Object\HoaDonObj.cs" />
     <Compile Include="Object\KhachHangObj.cs" />
     <Compile Include="Object\NhanVienObj.cs" />
+    <Compile Include="View\ChamCongForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ChamCongForm.Designer.cs">
+      <DependentUpon>ChamCongForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\HangHoaForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +112,9 @@
     <Compile Include="View\NhanVienForm.Designer.cs">
       <DependentUpon>NhanVienForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\ChamCongForm.resx">
+      <DependentUpon>ChamCongForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\HangHoaForm.resx">
       <DependentUpon>HangHoaForm.cs</DependentUpon>
     </EmbeddedResource>

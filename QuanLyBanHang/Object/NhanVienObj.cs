@@ -8,7 +8,13 @@ namespace QuanLyBanHang.Object
 {
     class NhanVienObj
     {
-        string ma, ten, gioitinh, diachi, sdt, matkhau, namsinh;
+        string ma, ten, gioitinh, diachi, sdt, matkhau, namsinh, manhandang;
+
+        public string Manhandang
+        {
+            get { return manhandang; }
+            set { manhandang = value; }
+        }
 
         public string DienThoai
         {
@@ -53,7 +59,7 @@ namespace QuanLyBanHang.Object
         }
 
         public NhanVienObj() { }
-        public NhanVienObj(string ma, string ten, string gioitinh, string namsinh, string diachi, string sdt, string matkhau)
+        public NhanVienObj(string ma, string ten, string gioitinh, string namsinh, string diachi, string sdt, string matkhau, string manhandang)
         {
             this.ma = ma;
             this.ten = ten;
@@ -62,6 +68,7 @@ namespace QuanLyBanHang.Object
             this.diachi = diachi;
             this.sdt = sdt;
             this.matkhau = matkhau;
+            this.manhandang = manhandang;
         }
     }
 }

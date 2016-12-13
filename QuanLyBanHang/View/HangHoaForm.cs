@@ -40,7 +40,7 @@ namespace QuanLyBanHang.View
             txtMa.Enabled = e;
             txtTen.Enabled = e;
             txtDonGia.Enabled = e;
-            txtSL.Enabled = e;
+            txtSL.Enabled = false;
             btnNhapHang.Enabled = !e;
         }
 
@@ -63,12 +63,13 @@ namespace QuanLyBanHang.View
             txtDonGia.Text = "";
             txtSL.Text = "";
         }
-
+        int hangmoi = 0;
         private void addData(HangHoaObj hh)
         {
             hh.MaHangHoa = txtMa.Text.Trim();
             hh.DonGia = int.Parse(txtDonGia.Text.Trim());
-            hh.SoLuong = int.Parse(txtSL.Text.Trim());
+            hangmoi += int.Parse(txtSL.Text.Trim());
+            hh.SoLuong = hangmoi;
             hh.TenHangHoa = txtTen.Text.Trim();
         }
 

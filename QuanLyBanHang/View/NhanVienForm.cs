@@ -44,6 +44,7 @@ namespace QuanLyBanHang.View
             txtDiaChi.Enabled = e;
             txtSDT.Enabled = e;
             cmbGioiTinh.Enabled = e;
+            txtCode.Enabled = e;
             dpNamSinh.Enabled = e;
         }
 
@@ -61,6 +62,8 @@ namespace QuanLyBanHang.View
             txtSDT.DataBindings.Add("Text", dtgvDS.DataSource, "SDT");
             dpNamSinh.DataBindings.Clear();
             dpNamSinh.DataBindings.Add("Text", dtgvDS.DataSource, "NamSinh");
+            txtCode.DataBindings.Clear();
+            txtCode.DataBindings.Add("Text", dtgvDS.DataSource, "MaNhanDang");
         }
 
         private void loadCMB()
@@ -78,6 +81,7 @@ namespace QuanLyBanHang.View
             txtDiaChi.Text = "";
             txtSDT.Text = "";
             dpNamSinh.Value = DateTime.Now.Date;
+            txtCode.Text = "";
             loadCMB();
         }
 
@@ -94,6 +98,7 @@ namespace QuanLyBanHang.View
             nv.DienThoai = txtSDT.Text.Trim();
             nv.TenNhanVien = txtTen.Text.Trim();
             nv.NamSinh = dpNamSinh.Text;
+            nv.Manhandang = txtCode.Text.Trim();
         }
 
         private void btnThem_Click(object sender, EventArgs e)

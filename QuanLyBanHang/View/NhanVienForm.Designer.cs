@@ -50,6 +50,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnLuu = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtCode = new System.Windows.Forms.TextBox();
+            this.lbUpload = new System.Windows.Forms.LinkLabel();
+            this.btUpload = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbAnh)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -222,10 +227,9 @@
             // 
             // txtMa
             // 
-            this.txtMa.Location = new System.Drawing.Point(118, 41);
+            this.txtMa.Location = new System.Drawing.Point(161, 41);
             this.txtMa.Name = "txtMa";
-            this.txtMa.ReadOnly = true;
-            this.txtMa.Size = new System.Drawing.Size(310, 26);
+            this.txtMa.Size = new System.Drawing.Size(267, 26);
             this.txtMa.TabIndex = 1;
             // 
             // label1
@@ -250,6 +254,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.cmbGioiTinh);
             this.groupBox1.Controls.Add(this.dpNamSinh);
             this.groupBox1.Controls.Add(this.label5);
@@ -270,11 +275,62 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin nhân viên";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(118, 44);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(37, 19);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "NV-";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(1141, 12);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(90, 13);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Code Nhận Dạng";
+            // 
+            // txtCode
+            // 
+            this.txtCode.Location = new System.Drawing.Point(1144, 37);
+            this.txtCode.Name = "txtCode";
+            this.txtCode.Size = new System.Drawing.Size(439, 20);
+            this.txtCode.TabIndex = 18;
+            // 
+            // lbUpload
+            // 
+            this.lbUpload.AutoSize = true;
+            this.lbUpload.Enabled = false;
+            this.lbUpload.Location = new System.Drawing.Point(1543, 98);
+            this.lbUpload.Name = "lbUpload";
+            this.lbUpload.Size = new System.Drawing.Size(41, 13);
+            this.lbUpload.TabIndex = 19;
+            this.lbUpload.TabStop = true;
+            this.lbUpload.Text = "Upload";
+            this.lbUpload.Visible = false;
+            // 
+            // btUpload
+            // 
+            this.btUpload.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btUpload.Location = new System.Drawing.Point(1144, 81);
+            this.btUpload.Name = "btUpload";
+            this.btUpload.Size = new System.Drawing.Size(145, 45);
+            this.btUpload.TabIndex = 20;
+            this.btUpload.Text = "Upload";
+            this.btUpload.UseVisualStyleBackColor = true;
+            // 
             // NhanVienForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1134, 539);
+            this.ClientSize = new System.Drawing.Size(1604, 539);
+            this.Controls.Add(this.btUpload);
+            this.Controls.Add(this.lbUpload);
+            this.Controls.Add(this.txtCode);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
@@ -294,6 +350,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -321,6 +378,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtCode;
+        private System.Windows.Forms.LinkLabel lbUpload;
+        private System.Windows.Forms.Button btUpload;
 
     }
 }
